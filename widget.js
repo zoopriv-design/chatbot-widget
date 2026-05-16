@@ -4,9 +4,11 @@
 
 (function() {
   // 1. Konfiguráció beolvasása a script tag attribútumaiból
-  const currentScript = document.currentScript;
-  const WORKER_URL = currentScript.src.replace('/widget.js', ''); // Automatikusan kiszámolja a Worker URL-t
-  const CLIENT_ID = currentScript.getAttribute('data-id');
+  // 🔧 KÉNYSZERÍTETT BEÁLLÍTÁSOK (TESZTELÉSHEZ)
+  const WORKER_URL = "https://chatbot-saas-proxy.trendkapocs.workers.dev";
+  const CLIENT_ID = "teszt-bot"; // ⚠️ Ellenőrizd, hogy ezt az ID-t elmentetted az admin felületen!
+
+  // (Ha később dinamikusan akarod, visszaállíthatod az eredeti sorokat, de most ez a biztos.)
 
   if (!CLIENT_ID) {
     console.error('🤖 Chatbot Widget: Hiányzó data-id attribútum a script tag-en!');
