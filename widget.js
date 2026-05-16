@@ -5,6 +5,7 @@
 (function() {
   // 1. Konfiguráció beolvasása a script tag attribútumaiból
   // 🔧 KÉNYSZERÍTETT BEÁLLÍTÁSOK (TESZTELÉSHEZ)
+  // 🔧 HARDKÓDOLT URL - TESZTELÉSHEZ
   const WORKER_URL = "https://chatbot-saas-proxy.trendkapocs.workers.dev";
   const CLIENT_ID = "teszt-bot"; // ⚠️ Ellenőrizd, hogy ezt az ID-t elmentetted az admin felületen!
 
